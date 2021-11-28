@@ -42,6 +42,8 @@ namespace DevIO_FirstApp
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseMiddleware<MeuMiddleware>();
+
             app.UseRouting();
 
             app.UseAuthorization();
